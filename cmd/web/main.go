@@ -2,17 +2,19 @@ package main
 
 import (
 	"fmt"
-	"github.com/TheHarryFer/go-bookings/pkg/config"
-	"github.com/TheHarryFer/go-bookings/pkg/handlers"
-	"github.com/TheHarryFer/go-bookings/pkg/render"
 	"log"
 	"net/http"
 	"time"
+
+	"github.com/TheHarryFer/go-bookings/internal/config"
+	"github.com/TheHarryFer/go-bookings/internal/handlers"
+	"github.com/TheHarryFer/go-bookings/internal/render"
 
 	"github.com/alexedwards/scs/v2"
 )
 
 const portNumber = "localhost:8080"
+
 var app config.AppConfig
 var session *scs.SessionManager
 
