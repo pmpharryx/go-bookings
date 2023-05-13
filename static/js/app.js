@@ -128,12 +128,6 @@ function checkRoomAvailabilityByID(id, CSRFToken) {
           document.getElementById("start").removeAttribute("disabled");
           document.getElementById("end").removeAttribute("disabled");
         },
-        preConfirm: () => {
-          return [
-            document.getElementById("start").value,
-            document.getElementById("end").value,
-          ];
-        },
         callback: function (result) {
           let form = document.getElementById("check-availability-form");
           let formData = new FormData(form);
